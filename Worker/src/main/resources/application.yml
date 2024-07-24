@@ -1,0 +1,28 @@
+#spring:
+#  application:
+#    name: Worker
+#  data:
+#    mongodb:
+#      host: localhost
+#      port: 27017
+#      database: myapp
+#
+#server:
+#  port: 2008
+spring:
+  application:
+    name: worker
+  config:
+    import: optional:configserver:http://localhost:8888
+
+#  jpa:
+#    generate-ddl: true
+#    properties:
+#      hibernate:
+#      ddl-auto: update
+#      show-sql: true
+
+
+
+#server:
+#  port: 2008
